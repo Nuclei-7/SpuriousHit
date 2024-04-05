@@ -1,0 +1,47 @@
+
+     
+      .swastik {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+        z-index: 1000;
+        
+        
+        height: 100vh;
+        width: 100vw;
+        
+       
+     
+        animation: heartbeat 1.5s infinite; /* Adjust duration as needed */
+        position: absolute;
+        
+      }
+      @keyframes heartbeat {
+        0% {
+          transform: scale(0.97);
+        }
+        25% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(0.97);
+        }
+        75% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(0.97);
+        }
+      }
+      .rotate-image {
+        animation: rotateAnimation 3s linear infinite;
+      }
+      @keyframes rotateAnimation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+ 
