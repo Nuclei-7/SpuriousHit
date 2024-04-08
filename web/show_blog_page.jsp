@@ -46,7 +46,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="css/mystyle.css" rel="stylesheet" type="text/css"/>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+
     
     
     <style>
@@ -124,7 +125,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#"><span class="fa fa-file-code-o"></span>Learn DSA with Govind <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#"><span class="fa fa-file-code-o"></span>Learn DSA <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -183,7 +184,7 @@
                          <% UserDao ud = new UserDao(ConnectionProvider.getConnection()); %>
                          
                         
-                             <p class="post-user-info"> <a href ="#!"> <%= p.getUserId() %>  </a>    has posted </p> 
+                             <p class="post-user-info"> <a  href ="#!" style="color: blue!important"> <%= p.getUserId() %>  </a>    has posted </p> 
 
                       </div>
                       
@@ -455,7 +456,10 @@
                                });
                            });
             </script>         
-        <footer>
+       
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+            <footer>
             
              <%@include file = "footer.jsp"%>
         </footer>
